@@ -5,21 +5,21 @@
 class GitAiCommit < Formula
   desc "AI-powered git commit message generator"
   homepage "https://github.com/skkdevcraft/git-ai-commit"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/skkdevcraft/git-ai-commit/releases/download/v0.1.2/git-ai-commit_Darwin_x86_64.tar.gz"
-      sha256 "c734b760a0be77227c77030de8e30af449995f187060e99f9204f383d6519547"
+      url "https://github.com/skkdevcraft/git-ai-commit/releases/download/v0.1.3/git-ai-commit_Darwin_x86_64.tar.gz"
+      sha256 "05d9ab4b25f3883a8df0f2e66ba1e528f74099a83b66fe5609ec7ef2579a4735"
 
       def install
         bin.install "git-ai-commit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/skkdevcraft/git-ai-commit/releases/download/v0.1.2/git-ai-commit_Darwin_arm64.tar.gz"
-      sha256 "93bd45cc0d74953fc28a5290d1857b255043867199900be0265b4da1c40e5d04"
+      url "https://github.com/skkdevcraft/git-ai-commit/releases/download/v0.1.3/git-ai-commit_Darwin_arm64.tar.gz"
+      sha256 "788ff554f735b26bb9d59bddbd99f04c419e59c059e6adef07b88bbf6b566483"
 
       def install
         bin.install "git-ai-commit"
@@ -29,15 +29,15 @@ class GitAiCommit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skkdevcraft/git-ai-commit/releases/download/v0.1.2/git-ai-commit_Linux_x86_64.tar.gz"
-      sha256 "b637657fc439916e5966f51e95aa8ffd9653e902982ea84eed1c1050d1d1b22d"
+      url "https://github.com/skkdevcraft/git-ai-commit/releases/download/v0.1.3/git-ai-commit_Linux_x86_64.tar.gz"
+      sha256 "7c5a41b92a23eea42edde6979ccabc9450339ac2034b08af75588d5e1723ff5c"
       def install
         bin.install "git-ai-commit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skkdevcraft/git-ai-commit/releases/download/v0.1.2/git-ai-commit_Linux_arm64.tar.gz"
-      sha256 "1380c8234bf44bdc2d4dd13cd109cd133bb7b3ae3e37f56ed8981887fea889a0"
+      url "https://github.com/skkdevcraft/git-ai-commit/releases/download/v0.1.3/git-ai-commit_Linux_arm64.tar.gz"
+      sha256 "8ff0c3919541d6a44084f58225ddc023320b6d58ddd61a3f19094eca56dfe03c"
       def install
         bin.install "git-ai-commit"
       end
